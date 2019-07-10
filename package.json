@@ -1,0 +1,32 @@
+{
+  "name": "mern_stack_example-",
+  "version": "1.0.0",
+  "description": "MERN stack example",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaacGillard/MERN_Stack_Example-.git"
+  },
+  "author": "Isaac Gillard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsaacGillard/MERN_Stack_Example-/issues"
+  },
+  "homepage": "https://github.com/IsaacGillard/MERN_Stack_Example-#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
